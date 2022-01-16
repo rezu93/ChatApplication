@@ -1,0 +1,13 @@
+<p>First Name: {{firstName}}</p>
+<p>Last Name: {{lastName}}</p>
+<p>Response from backend: {{backendResponse}}</p>
+
+<div>
+  <p>Messages:</p>
+  <div *ngFor="let messageInArray of messages">
+    <p>{{messageInArray.author}}: {{messageInArray.content}}</p>
+  </div>
+</div>
+
+<input [(ngModel)]="message" />
+<button (click)="sendRequestToBackend()">Click me to send message</button>

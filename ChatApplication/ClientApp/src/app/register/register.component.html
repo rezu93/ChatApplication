@@ -1,0 +1,9 @@
+<p>First Name: </p>
+<input [(ngModel)]="userRegisterDto.firstName"/>
+<p>Last Name: </p>
+<input [(ngModel)]="userRegisterDto.lastName"/>
+<p>Email: </p>
+<input [(ngModel)]="userRegisterDto.email"/>
+<p>Password: </p>
+<input type="password" [(ngModel)]="userRegisterDto.password"/>
+<button (click)="sendRequestToBackend()">Submit</button>
